@@ -81,3 +81,34 @@
   <footer class="foot">© MÎK Tech Lab</footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MÎK AI Chatbot</title>
+</head>
+<body>
+  <h1>MÎK AI 🤖</h1>
+  <textarea id="input" placeholder="Type your message..."></textarea>
+  <button onclick="sendMessage()">Send</button>
+
+  <pre id="output"></pre>
+
+<script>
+async function sendMessage() {
+  const userMessage = document.getElementById("input").value;
+
+  const res = await fetch("https://mik-ai-backend-your-name.replit.app/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message: userMessage })
+  });
+
+  const data = await res.json();
+  document.getElementById("output").textContent = data.reply;
+}
+</script>
+
+</body>
+</html>
