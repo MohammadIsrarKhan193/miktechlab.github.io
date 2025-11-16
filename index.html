@@ -1,114 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Welcome to My Website</title>
-</head>
-<body style="font-family: Arial; text-align: center; padding: 50px;">
-  <h1>Hello, I'm MÎK 👋</h1>
-  <p>Welcome to my first GitHub-hosted website!</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MÎK Tech Lab</title>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #333);
-      color: #fff;
-      text-align: center;
-      padding: 60px;
-    }
-    h1 {
-      font-size: 3em;
-      color: #00ffff;
-    }
-    p {
-      font-size: 1.3em;
-      margin-top: 10px;
-    }
-    a {
-      color: #00ffff;
-      text-decoration: none;
-      border: 2px solid #00ffff;
-      padding: 10px 20px;
-      border-radius: 10px;
-      display: inline-block;
-      margin-top: 20px;
-      transition: 0.3s;
-    }
-    a:hover {
-      background-color: #00ffff;
-      color: #000;
-    }
-  </style>
-</head>
-<body>
-  <h1>👋 Welcome to MÎK Tech Lab</h1>
-  <p>I’m MoHaMmaD IsRaR KhAn — a passionate tech creator and AI enthusiast!</p>
-  <a href="https://youtube.com/@miktechlab19?si=CbDYKLkmFJuWko2g" target="_blank">Visit My YouTube Channel</a>
-</body>
-</html>
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MÎK Tech Lab</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <a href="chat.html" style="margin-left:auto">Chat (My AI)</a>
-  </header>
-
-  <main class="center">
-    <h1>👋 Welcome to MÎK Tech Lab</h1>
-    <p>I’m MoHaMmaD IsRaR KhAn — building bots, web apps & AI.</p>
-    <div class="cards">
-      <a class="card" href="projects.html">See Projects →</a>
-      <a class="card" href="contact.html">Contact Me →</a>
-    </div>
-  </main>
-
-  <footer class="foot">© MÎK Tech Lab</footer>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MÎK AI Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <h1>MÎK AI 🤖</h1>
+
   <textarea id="input" placeholder="Type your message..."></textarea>
   <button onclick="sendMessage()">Send</button>
 
   <pre id="output"></pre>
 
-<script>
-async function sendMessage() {
-  const userMessage = document.getElementById("input").value;
-
-  const res = await fetch("https://e456ff4f-fa85-4a06-8694-233622689738-00-3sm6qg7qbafed.pike.replit.dev/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message: userMessage })
-  });
-
-  const data = await res.json();
-  document.getElementById("output").textContent = data.reply;
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
