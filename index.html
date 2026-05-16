@@ -1,77 +1,20 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MÎK Tech Lab | Mohammad Israr Khan</title>
-  <meta name="description" content="MÎK Tech Lab is the personal website of Mohammad Israr Khan, showcasing AI chatbots, web development projects, automation tools, and English learning platforms." />
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
-    body { background: #0f172a; color: #e5e7eb; line-height: 1.6; }
-    header { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px; }
-    header h1 { font-size: 4rem; margin-bottom: 15px; color: #38bdf8; letter-spacing: 2px; text-transform: uppercase; }
-    header { background: linear-gradient(135deg, #020617, #0f172a); }
-    header p { color: #cbd5e1; }
-    header p { font-size: 1.2rem; max-width: 700px; margin: auto; }
-    section { padding: 70px 10%; }
-    h2 { font-size: 2rem; margin-bottom: 20px; color: #38bdf8; }
-    .about p { max-width: 800px; }
-    .skills ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; list-style: none; }
-    .skills li { background: #020617; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.4); }
-    .projects .card { background: #020617; padding: 25px; border-radius: 18px; margin-bottom: 25px; border: 1px solid rgba(56,189,248,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .projects .card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(56,189,248,0.25); }
-    .contact a { color: #38bdf8; text-decoration: none; display: block; margin-bottom: 10px; }
-    footer { text-align: center; padding: 20px; background: #020617; font-size: 0.9rem; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MÎK AI Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body><header>
-  <div>
-    <h1>MÎK Tech Lab</h1>
-    <p>Building AI chatbots, web applications, automation tools, and English learning platforms.</p>
-  </div>
-</header><section class="about">
-  <h2>About Me</h2>
-  <p>
-    Hi, I’m <strong>MoHaMmaD IsRaR KhAn</strong>, a tech enthusiast focused on AI chatbots, web development, and digital learning solutions. I build practical tools such as WhatsApp AI bots, web apps, and English learning platforms while continuously improving my skills in modern technologies.
-  </p>
-</section><section class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>AI Chatbots (OpenAI, WhatsApp Bots)</li>
-    <li>Web Development (HTML, CSS, JavaScript)</li>
-    <li>Automation & API Integration</li>
-    <li>English Learning Platforms</li>
-    <li>Web to App Conversion</li>
-  </ul>
-</section><section class="projects">
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>MÎK AI Chatbot</h3>
-    <p>AI-powered WhatsApp chatbot for learning, automation, and daily assistance.</p>
-  </div>
-  <div class="card">
-    <h3>English Learning Communities</h3>
-    <p>Fluent English Zone & IELTS-focused learning groups with quizzes and practice.</p>
-  </div>
-  <div class="card">
-    <h3>Web Applications</h3>
-    <p>Personal and educational web projects built using modern web technologies.</p>
-  </div>
-  <div class="card">
-    <h3>MÎK AI Backend</h3>
-    <p>Backend service for AI-powered applications and chatbot integrations.</p>
-    <p><a href="https://mik-ai-backend.onrender.com/" target="_blank" style="color:#38bdf8;">Visit Project</a></p>
-  </div>
-  <div class="card">
-    <h3>Al Quran Website</h3>
-    <p>An online Quran project built for learning and accessibility.</p>
-    <p><a href="https://mohammadisrarkhan193.github.io/alquran/" target="_blank" style="color:#38bdf8;">Visit Project</a></p>
-  </div>
-</section><section class="contact">
-  <h2>Contact</h2>
-  <a href="mailto:mik.studio.global@gmail.com">📧 Email: mik.studio.global@gmail.com</a>
-  <a href="https://wa.me/93789662146">📱 WhatsApp: +93 789 662 146</a>
-  <a href="#">▶ YouTube: MÎK Tech Lab</a>
-</section><footer>
-  © 2026 MÎK Tech Lab • Mohammad Israr Khan
-</footer></body>
+<body>
+
+  <h1>MÎK AI 🤖</h1>
+
+  <textarea id="input" placeholder="Type your message..."></textarea>
+  <button onclick="sendMessage()">Send</button>
+
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
+</body>
 </html>
